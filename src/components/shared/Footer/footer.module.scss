@@ -1,0 +1,41 @@
+.footer {
+  background-color: var(--primary-color);
+
+  .container {
+    padding: 20px 0;
+    flex-wrap: wrap;
+
+    &,
+    a,
+    .contact {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    p,
+    .contact a svg {
+      margin: 0 5px;
+    }
+
+    a {
+      transition: all 0.18s ease-in-out;
+
+      &:hover {
+        opacity: 0.6;
+      }
+    }
+
+    @media only screen and (max-width: 480px) {
+      flex-direction: column-reverse;
+
+      .divider {
+        color: transparent;
+        width: 80%;
+        height: 1px;
+        border-top: 1px solid black;
+        margin: 10px 0;
+      }
+    }
+  }
+}

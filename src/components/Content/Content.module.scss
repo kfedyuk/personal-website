@@ -1,0 +1,46 @@
+.wrapper {
+  display: flex;
+  margin-bottom: 1.2rem;
+  padding: 0 40px;
+
+  .left {
+    flex: 3;
+
+    p {
+      margin-bottom: 0.2rem;
+    }
+
+    .title {
+      font-weight: bold;
+    }
+
+    .subtitle {
+      font-style: italic;
+      margin-bottom: 0.6rem;
+    }
+
+    small {
+      margin-bottom: 0.6rem;
+      display: none;
+    }
+  }
+
+  .right {
+    flex: 1;
+    text-align: end;
+  }
+  @media only screen and (max-width: 480px) {
+    .left {
+      .subtitle {
+        margin-bottom: unset;
+      }
+
+      small {
+        display: block;
+      }
+    }
+    .right {
+      display: none;
+    }
+  }
+}

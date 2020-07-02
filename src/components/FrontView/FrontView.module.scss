@@ -1,0 +1,87 @@
+.wrapper {
+  min-height: 100vh;
+  background-image: url("../../images/background_image.svg");
+  background-repeat: no-repeat;
+  background-position: 101% -1px;
+  background-size: contain;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+
+  .container {
+    width: 100%;
+    padding: 40px;
+    margin: 0 auto;
+
+    h1 {
+      font-size: 4rem;
+    }
+
+    .buttonWrapper {
+      display: flex;
+      align-items: center;
+
+      button,
+      a {
+        margin-right: 10px;
+      }
+
+      a {
+        display: flex;
+        align-items: center;
+
+        &.anchor {
+          transition: all 0.18s ease-in-out;
+
+          &:hover {
+            opacity: 0.6;
+          }
+        }
+      }
+    }
+  }
+
+  .scrollIndicator {
+    position: absolute;
+    bottom: 50px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: all 0.4s ease-in-out;
+    animation-name: bounce;
+    animation-duration: 1.5s;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    color: var(--secondary-text-color);
+    font-weight: bold;
+    pointer-events: none;
+
+    &.hidden {
+      opacity: 0;
+    }
+  }
+
+  @keyframes bounce {
+    0% {
+      transform: translateY(0);
+    }
+    15%,
+    20% {
+      transform: translateY(-10px);
+    }
+    50% {
+      transform: translateY(15px);
+    }
+    75%,
+    100% {
+      transform: translateY(0);
+    }
+  }
+
+  @media only screen and (max-width: 480px) {
+    background-position: 33vw -1px;
+  }
+}

@@ -1,0 +1,48 @@
+.button {
+  background-color: var(--secondary-color);
+  background: linear-gradient(
+    259.07deg,
+    rgba(#fde2e2, 0.4) 4.07%,
+    #fde2e2 100%
+  );
+  color: var(--secondary-text-color);
+  border-radius: 6px;
+  border: none;
+  $color: rgba(#fde2e9, 0.1);
+  box-shadow: 0 1px 2px $color, 0 2px 4px $color, 0 4px 8px $color,
+    0 8px 16px $color, 0 16px 32px $color, 0 32px 64px $color;
+  padding: 7px 25px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+
+  svg {
+    margin-left: 7px;
+  }
+
+  &::before {
+    --size: 0;
+
+    content: "";
+    position: absolute;
+    left: var(--size);
+    top: var(--size);
+    right: var(--size);
+    bottom: var(--size);
+    border: 2px solid var(--secondary-color);
+    border-radius: 6px;
+    transition: all 0.18s ease-in-out;
+    opacity: 0;
+  }
+
+  &:hover::before {
+    --size: -4px;
+
+    opacity: 1;
+  }
+
+  &:visited {
+    color: var(--secondary-text-color);
+  }
+}
