@@ -16,6 +16,8 @@
 
     h1 {
       font-size: 4rem;
+      word-wrap: break-word;
+      hyphens: auto;
     }
 
     .buttonWrapper {
@@ -83,5 +85,9 @@
 
   @media only screen and (max-width: 480px) {
     background-position: 33vw -1px;
+
+    .container h1 {
+      font-size: 3.5rem;
+    }
   }
 }
