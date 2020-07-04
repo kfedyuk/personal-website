@@ -48,8 +48,16 @@ function SEO({ description, lang, meta, title }) {
           content: `https://khrystynafedyuk.me/front-image.png`,
         },
         {
+          property: `og:image:alt`,
+          content: `Khrystyna Fedyuk`,
+        },
+        {
+          property: `og:url`,
+          content: `https://khrystynafedyuk.me`,
+        },
+        {
           name: `twitter:card`,
-          content: `summary`,
+          content: `summary_large_image`,
         },
         {
           name: `twitter:creator`,
@@ -62,6 +70,18 @@ function SEO({ description, lang, meta, title }) {
         {
           name: `twitter:description`,
           content: metaDescription,
+        },
+        {
+          name: `twitter:image`,
+          content: `https://khrystynafedyuk.me/front-image.png`,
+        },
+        {
+          name: `twitter:image:alt`,
+          content: `Khrystyna Fedyuk`,
+        },
+        {
+          name: `twitter:url`,
+          content: `https://khrystynafedyuk.me`,
         },
       ].concat(meta)}
     />
