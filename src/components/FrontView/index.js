@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react"
 import { useStaticQuery, graphql } from "gatsby"
-import { FiLinkedin, FiMail, FiDownload } from "react-icons/fi"
+import { FiLinkedin, FiMail, FiDownload, FiGithub } from "react-icons/fi"
 import { BsArrowDown } from "react-icons/bs"
 import frontViewStyles from "./FrontView.module.scss"
 import Button from "../Button"
@@ -49,6 +49,14 @@ const FrontView = () => {
             className={frontViewStyles.anchor}
           >
             <FiLinkedin />
+          </a>
+          <a
+            href="https://github.com/kfedyuk"
+            target="blank"
+            rel="noopener noreferrer"
+            className={frontViewStyles.anchor}
+          >
+            <FiGithub />
           </a>
           <a
             href="mailto:kfedyuk.geral@gmail.com"

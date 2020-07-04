@@ -1,5 +1,5 @@
 import React from "react"
-import { FiLinkedin, FiMail } from "react-icons/fi"
+import { FiLinkedin, FiMail, FiGithub } from "react-icons/fi"
 import footerStyles from "./footer.module.scss"
 
 const Footer = () => {
@@ -15,6 +15,13 @@ const Footer = () => {
             rel="noopener noreferrer"
           >
             <FiLinkedin />
+          </a>
+          <a
+            href="https://github.com/kfedyuk"
+            target="blank"
+            rel="noopener noreferrer"
+          >
+            <FiGithub />
           </a>
           <a
             href="mailto:kfedyuk.geral@gmail.com"

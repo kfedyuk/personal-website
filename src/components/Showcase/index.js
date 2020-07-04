@@ -133,13 +133,13 @@ const Showcase = () => {
           <Content
             title="Université Grenoble Alpes"
             subtitle="M.Sc. in Computer Science and Engineering"
-            text="A semester in Grenoble, France by the Erasmus program, where I took the course Programming language and compiler design."
+            text="A semester in Grenoble, France by the Erasmus program, where I took the Programming language and compiler design course."
             date="Sep 2017 – Jan 2018"
           />
           <Content
             title="National School of Computer Science and Applied Mathematics of Grenoble"
             subtitle="M.Sc. in Computer Science and Engineering"
-            text="A semester in Grenoble, France by the Erasmus program where I took the courses Human Computer Interaction and Parallel Systems."
+            text="A semester in Grenoble, France by the Erasmus program where I took the Human Computer Interaction and Parallel Systems courses."
             date="Sep 2017 – Jan 2018"
           />
         </article>
@@ -178,7 +178,7 @@ const Showcase = () => {
           />
           <Content
             title="Other Tools"
-            text="Git, Tomcat, Google App Engine, Amazon EC2, MongoDB, levelDB, Google Cloud Data Store, SQL Server, MySQL"
+            text="Git, Postman, Tomcat, Google App Engine, Amazon EC2, MongoDB, levelDB, Google Cloud Data Store, SQL Server, MySQL"
           />
           <Content
             title="Spoken Languages"
