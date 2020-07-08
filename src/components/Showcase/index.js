@@ -151,7 +151,8 @@ const Showcase = () => {
           <Content
             title="LightKone - Lightweight Computation for Networks at the Edge"
             subtitle="Research Grant"
-            text="Worked with the Computer Systems Groups of NOVA LINCS to design an architecture, potentially based on microservice architectures, that will manage the execution of distributed applications across the cloud-edge spectrum. I focused on developing and testing a Java based discovery service for microservices for cloud/edge settings."
+            text="Worked with the Computer Systems Groups of NOVA LINCS, during development
+            of my master's thesis, to design an architecture, potentially based on microservice architectures, that will manage the execution of distributed applications across the cloud-edge spectrum. I focused on developing and testing a Java based discovery service for microservices for cloud/edge settings."
             date="May 2019 – Oct 2019"
           />
           <Content
@@ -170,7 +171,7 @@ const Showcase = () => {
         <article ref={skillsRef} className={showcaseStyles.block} id="skills">
           <Content
             title="Programming Languages"
-            text="Java (Maven, Gradle), C, C++, Python, SQL, Javascript, HTML, CSS"
+            text="Java (Maven, Gradle), C, C++, C#, Python, SQL, Javascript, HTML, CSS"
           />
           <Content
             title="Frameworks and Libraries"
